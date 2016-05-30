@@ -8,16 +8,15 @@ package extrabiomes.module.amica.ic2;
 
 import java.util.Collection;
 
-import net.minecraft.world.biome.BiomeGenBase;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-
 import com.google.common.base.Optional;
 import com.google.common.collect.Lists;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.PluginEvent;
 import extrabiomes.helpers.LogHelper;
 import extrabiomes.lib.BiomeSettings;
+import net.minecraft.world.biome.BiomeGenBase;
 
 public class IC2Plugin
 {

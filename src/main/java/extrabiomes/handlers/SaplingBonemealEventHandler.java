@@ -8,8 +8,8 @@ package extrabiomes.handlers;
 
 import cpw.mods.fml.common.eventhandler.Event.Result;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.event.entity.player.BonemealEvent;
 import extrabiomes.blocks.BlockCustomSapling;
+import net.minecraftforge.event.entity.player.BonemealEvent;
 
 public class SaplingBonemealEventHandler
 {

@@ -6,8 +6,6 @@
 
 package extrabiomes.handlers;
 
-import net.minecraft.item.ItemStack;
-
 import com.google.common.base.Optional;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -20,6 +18,7 @@ import extrabiomes.lib.Element;
 import extrabiomes.lib.ItemSettings;
 import extrabiomes.lib.ModuleControlSettings;
 import extrabiomes.lib.Reference;
+import net.minecraft.item.ItemStack;
 
 public abstract class ItemHandler
 {

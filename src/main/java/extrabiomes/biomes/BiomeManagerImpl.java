@@ -17,24 +17,6 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.Random;
 
-import extrabiomes.lib.GeneralSettings;
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.world.World;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-import net.minecraft.world.gen.feature.WorldGenBigTree;
-import net.minecraft.world.gen.feature.WorldGenForest;
-import net.minecraft.world.gen.feature.WorldGenHugeTrees;
-import net.minecraft.world.gen.feature.WorldGenMegaJungle;
-import net.minecraft.world.gen.feature.WorldGenShrub;
-import net.minecraft.world.gen.feature.WorldGenSwamp;
-import net.minecraft.world.gen.feature.WorldGenTaiga1;
-import net.minecraft.world.gen.feature.WorldGenTaiga2;
-import net.minecraft.world.gen.feature.WorldGenTallGrass;
-import net.minecraft.world.gen.feature.WorldGenTrees;
-import net.minecraft.world.gen.feature.WorldGenerator;
-
 import com.google.common.base.Optional;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.ImmutableSet;
@@ -44,6 +26,7 @@ import extrabiomes.api.BiomeManager;
 import extrabiomes.helpers.BiomeHelper;
 import extrabiomes.lib.BiomeSettings;
 import extrabiomes.lib.Element;
+import extrabiomes.lib.GeneralSettings;
 import extrabiomes.module.summa.biome.WeightedRandomChooser;
 import extrabiomes.module.summa.biome.WeightedWorldGenerator;
 import extrabiomes.module.summa.worldgen.WorldGenAcacia;
@@ -56,16 +39,31 @@ import extrabiomes.module.summa.worldgen.WorldGenFirTree;
 import extrabiomes.module.summa.worldgen.WorldGenFirTreeHuge;
 import extrabiomes.module.summa.worldgen.WorldGenJapaneseMapleShrub;
 import extrabiomes.module.summa.worldgen.WorldGenJapaneseMapleTree;
-import extrabiomes.module.summa.worldgen.WorldGenRainbowEucalyptusTree;
 import extrabiomes.module.summa.worldgen.WorldGenNewRedwood;
+import extrabiomes.module.summa.worldgen.WorldGenRainbowEucalyptusTree;
 import extrabiomes.module.summa.worldgen.WorldGenRedwood;
 import extrabiomes.module.summa.worldgen.WorldGenSakuraBlossomTree;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.gen.feature.WorldGenAbstractTree;
+import net.minecraft.world.gen.feature.WorldGenBigTree;
+import net.minecraft.world.gen.feature.WorldGenForest;
+import net.minecraft.world.gen.feature.WorldGenMegaJungle;
+import net.minecraft.world.gen.feature.WorldGenShrub;
+import net.minecraft.world.gen.feature.WorldGenSwamp;
+import net.minecraft.world.gen.feature.WorldGenTaiga1;
+import net.minecraft.world.gen.feature.WorldGenTaiga2;
+import net.minecraft.world.gen.feature.WorldGenTallGrass;
+import net.minecraft.world.gen.feature.WorldGenTrees;
+import net.minecraft.world.gen.feature.WorldGenerator;
 
 @SuppressWarnings("deprecation")
 public class BiomeManagerImpl extends BiomeManager
 {
     
-    private static final WorldGenerator                                               CYPRESS_TREE_GEN          = new WorldGenCypressTree(false);
+    //private static final WorldGenerator                                               CYPRESS_TREE_GEN          = new WorldGenCypressTree(false);
     private static final WorldGenerator                                               ACACIA_TREE_GEN           = new WorldGenAcacia(false);
     private static final WorldGenerator                                               ALT_TAIGA_GEN             = new WorldGenTaiga2(false);
     private static final WorldGenerator                                               BIG_FIR_TREE_GEN          = new WorldGenFirTreeHuge(false);

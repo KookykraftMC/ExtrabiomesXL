@@ -8,10 +8,10 @@ package extrabiomes.module.summa.biome;
 
 import java.util.Map;
 
-import net.minecraft.world.biome.BiomeDecorator;
-import net.minecraft.world.biome.BiomeGenBase;
 import extrabiomes.lib.DecorationSettings;
 import extrabiomes.lib.DecorationSettings.Decoration;
+import net.minecraft.world.biome.BiomeDecorator;
+import net.minecraft.world.biome.BiomeGenBase;
 
 class CustomBiomeDecorator extends BiomeDecorator
 {
@@ -20,6 +20,7 @@ class CustomBiomeDecorator extends BiomeDecorator
     {
         
         // required parms
+        @SuppressWarnings("unused")
         private final BiomeGenBase biome;
         
         // optional parms - initialized to defaults

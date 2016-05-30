@@ -4,11 +4,10 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Random;
 
-import net.minecraft.world.World;
-
 import com.google.common.base.Optional;
 
 import extrabiomes.helpers.LogHelper;
+import net.minecraft.world.World;
 
 public class BuildcraftAPI
 {

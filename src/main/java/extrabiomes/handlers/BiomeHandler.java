@@ -9,13 +9,9 @@ package extrabiomes.handlers;
 import java.util.Locale;
 import java.util.Set;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.world.WorldType;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraftforge.common.BiomeManager;
-
 import com.google.common.base.Optional;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.Api;
 import extrabiomes.api.events.GetBiomeIDEvent;
@@ -28,6 +24,10 @@ import extrabiomes.module.summa.worldgen.MountainDesertGenerator;
 import extrabiomes.module.summa.worldgen.MountainRidgeGenerator;
 import extrabiomes.module.summa.worldgen.VanillaFloraGenerator;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.config.Configuration;
 
 public enum BiomeHandler
 {
@@ -101,7 +101,7 @@ public enum BiomeHandler
         Extrabiomes.proxy.registerWorldGenerator(new VanillaFloraGenerator());
         
         // allow legendary oaks to be disabled
-        if( config.get(config.CATEGORY_GENERAL, "GenerateLegendOaks", true).getBoolean() ) {
+        if( config.get(Configuration.CATEGORY_GENERAL, "GenerateLegendOaks", true).getBoolean() ) {
         	Extrabiomes.proxy.registerWorldGenerator(new LegendOakGenerator());
         }
     }

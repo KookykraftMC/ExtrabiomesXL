@@ -6,9 +6,8 @@
 
 package extrabiomes.module.fabrica.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import extrabiomes.Extrabiomes;
+import net.minecraft.block.Block;
 
 public class BlockWoodStairs extends BlockCustomStairs
 {

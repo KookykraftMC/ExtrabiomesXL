@@ -3,6 +3,7 @@
 package two.newdawn.API;
 
 import java.util.Set;
+
 import two.newdawn.API.noise.SimplexNoise;
 
 /**

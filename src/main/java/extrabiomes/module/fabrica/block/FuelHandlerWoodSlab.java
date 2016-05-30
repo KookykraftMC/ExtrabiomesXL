@@ -6,10 +6,10 @@
 
 package extrabiomes.module.fabrica.block;
 
+import cpw.mods.fml.common.IFuelHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import cpw.mods.fml.common.IFuelHandler;
 
 class FuelHandlerWoodSlabs implements IFuelHandler
 {

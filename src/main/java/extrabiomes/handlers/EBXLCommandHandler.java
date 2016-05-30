@@ -3,13 +3,6 @@ package extrabiomes.handlers;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import net.minecraft.block.Block;
-import net.minecraft.command.CommandBase;
-import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ChatComponentText;
-import net.minecraftforge.oredict.OreDictionary;
 import extrabiomes.blocks.BlockCustomSapling;
 import extrabiomes.blocks.BlockNewSapling;
 import extrabiomes.lib.Element;
@@ -25,9 +18,16 @@ import extrabiomes.module.summa.worldgen.WorldGenFirTreeHuge;
 import extrabiomes.module.summa.worldgen.WorldGenJapaneseMapleShrub;
 import extrabiomes.module.summa.worldgen.WorldGenJapaneseMapleTree;
 import extrabiomes.module.summa.worldgen.WorldGenLegendOak;
-import extrabiomes.module.summa.worldgen.WorldGenRainbowEucalyptusTree;
 import extrabiomes.module.summa.worldgen.WorldGenNewRedwood;
+import extrabiomes.module.summa.worldgen.WorldGenRainbowEucalyptusTree;
 import extrabiomes.module.summa.worldgen.WorldGenSakuraBlossomTree;
+import net.minecraft.block.Block;
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.ChatComponentText;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class EBXLCommandHandler extends CommandBase
 {
@@ -539,6 +539,7 @@ public class EBXLCommandHandler extends CommandBase
             currentBlock = killList.remove();
             Block block = player.worldObj.getBlock(currentBlock.x(), currentBlock.y(), currentBlock.z());
             int damage = player.worldObj.getBlockMetadata(currentBlock.x(), currentBlock.y(), currentBlock.z());
+            @SuppressWarnings("deprecation")
             String blockType = OreDictionary.getOreName(OreDictionary.getOreID(new ItemStack(block, 1, damage)));
 
             // shorten the coords

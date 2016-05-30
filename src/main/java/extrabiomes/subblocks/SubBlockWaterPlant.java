@@ -3,8 +3,6 @@ package extrabiomes.subblocks;
 import java.util.LinkedList;
 import java.util.List;
 
-import extrabiomes.api.events.GetBiomeIDEvent;
-import extrabiomes.helpers.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;

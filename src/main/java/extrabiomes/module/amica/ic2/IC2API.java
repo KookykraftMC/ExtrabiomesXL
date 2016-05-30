@@ -8,11 +8,10 @@ package extrabiomes.module.amica.ic2;
 
 import java.lang.reflect.Method;
 
-import net.minecraft.world.biome.BiomeGenBase;
-
 import com.google.common.base.Optional;
 
 import extrabiomes.helpers.LogHelper;
+import net.minecraft.world.biome.BiomeGenBase;
 
 class IC2API
 {

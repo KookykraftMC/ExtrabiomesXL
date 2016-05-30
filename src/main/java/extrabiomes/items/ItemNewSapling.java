@@ -36,6 +36,7 @@ public class ItemNewSapling extends MultiItemBlock
         return super.getUnlocalizedName() + "." + BlockNewSapling.BlockType.values()[metadata & METADATA_BITMASK].toString().toLowerCase(Locale.ENGLISH);
     }
     
+    @SuppressWarnings("rawtypes")
     @Override
     public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
     	BlockNewSapling.addInformation(itemForTooltip.getItemDamage(), listOfLines);

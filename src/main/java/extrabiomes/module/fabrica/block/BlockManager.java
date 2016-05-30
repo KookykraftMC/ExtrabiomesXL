@@ -6,16 +6,8 @@
 
 package extrabiomes.module.fabrica.block;
 
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.items.ItemCustomDoor;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockDoor;
-import net.minecraft.block.BlockSlab;
-import net.minecraft.block.material.Material;
-
 import com.google.common.base.Optional;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.Stuff;
 import extrabiomes.blocks.BlockCustomFence;
@@ -24,6 +16,8 @@ import extrabiomes.events.BlockActiveEvent.AcaciaStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.AutumnStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.BaldCypressStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.CypressStairsActiveEvent;
+import extrabiomes.events.BlockActiveEvent.FenceActiveEvent;
+import extrabiomes.events.BlockActiveEvent.FenceGateActiveEvent;
 import extrabiomes.events.BlockActiveEvent.FirStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.JapaneseMapleStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.NewWoodSlabActiveEvent;
@@ -35,19 +29,17 @@ import extrabiomes.events.BlockActiveEvent.RedRockSlabActiveEvent;
 import extrabiomes.events.BlockActiveEvent.RedwoodStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.SakuraBlossomStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.WallActiveEvent;
-import extrabiomes.events.BlockActiveEvent.WoodSlabActiveEvent;
 import extrabiomes.events.BlockActiveEvent.WoodDoorActiveEvent;
-import extrabiomes.events.BlockActiveEvent.FenceActiveEvent;
-import extrabiomes.events.BlockActiveEvent.FenceGateActiveEvent;
+import extrabiomes.events.BlockActiveEvent.WoodSlabActiveEvent;
+import extrabiomes.helpers.LogHelper;
 import extrabiomes.lib.BlockSettings;
 import extrabiomes.lib.Element;
 import extrabiomes.lib.GeneralSettings;
-import extrabiomes.lib.Reference;
-import extrabiomes.module.amica.buildcraft.FacadeHelper;
-import extrabiomes.module.fabrica.block.BlockCustomWood;
 import extrabiomes.proxy.CommonProxy;
 import extrabiomes.renderers.CustomDoorRender;
 import extrabiomes.renderers.CustomFenceRender;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSlab;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
@@ -76,7 +68,7 @@ public enum BlockManager
             thisBlock.setBlockName("extrabiomes.planks");
             proxy.setBlockHarvestLevel(thisBlock, "axe", 0);
             proxy.registerBlock(thisBlock, extrabiomes.utility.MultiItemBlock.class, "planks");
-            for (final BlockCustomWood.BlockType type : BlockCustomWood.BlockType.values())
+            for (@SuppressWarnings("unused") final BlockCustomWood.BlockType type : BlockCustomWood.BlockType.values())
             {
                 //FacadeHelper.addBuildcraftFacade(thisBlock, type.metadata());
             }
@@ -1169,8 +1161,10 @@ public enum BlockManager
 
     private Block _block = null;
     private boolean _flammable = false;
+    @SuppressWarnings("rawtypes")
     private Optional _stuff = null;
 
+    @SuppressWarnings("rawtypes")
     private BlockManager(Optional stuff, boolean flammable) {
         _stuff = stuff;
         _flammable = flammable;

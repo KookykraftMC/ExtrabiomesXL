@@ -1,14 +1,12 @@
 package extrabiomes.items;
 
-import java.util.Collection;
 import java.util.List;
 
+import extrabiomes.blocks.BlockCustomFlower;
+import extrabiomes.utility.MultiItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import extrabiomes.blocks.BlockCustomFlower;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.utility.MultiItemBlock;
 
 public class ItemFlower extends MultiItemBlock
 {
@@ -33,6 +31,7 @@ public class ItemFlower extends MultiItemBlock
     	return block.getUnlocalizedName(itemstack.getItemDamage());
     }
 
+    @SuppressWarnings("rawtypes")
     @Override
     public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
     	block.addInformation(itemForTooltip.getItemDamage(), listOfLines);

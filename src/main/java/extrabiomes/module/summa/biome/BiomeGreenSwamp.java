@@ -7,18 +7,14 @@
 package extrabiomes.module.summa.biome;
 
 import cpw.mods.fml.common.eventhandler.Event.Result;
-import net.minecraft.entity.EntityLiving;
+import extrabiomes.lib.BiomeSettings;
+import extrabiomes.lib.DecorationSettings;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.biome.BiomeGenBase.Height;
-import net.minecraft.world.biome.BiomeGenBase.SpawnListEntry;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BiomeSettings;
-import extrabiomes.lib.DecorationSettings;
 
 public class BiomeGreenSwamp extends ExtrabiomeGenBase {
 

@@ -9,14 +9,6 @@ package extrabiomes;
 import java.io.File;
 import java.util.Locale;
 
-import net.minecraft.command.ICommandManager;
-import net.minecraft.command.ServerCommandManager;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.server.MinecraftServer;
-import net.minecraftforge.common.MinecraftForge;
-import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.EventBus;
-
 import com.google.common.base.Optional;
 
 import cpw.mods.fml.common.Mod;
@@ -26,6 +18,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
+import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.eventhandler.EventBus;
 import extrabiomes.biomes.BiomeManagerImpl;
 import extrabiomes.events.ModuleEvent.ModuleInitEvent;
 import extrabiomes.events.ModulePreInitEvent;
@@ -35,7 +29,6 @@ import extrabiomes.handlers.CanMobSpawnHandler;
 import extrabiomes.handlers.ConfigurationHandler;
 import extrabiomes.handlers.CropHandler;
 import extrabiomes.handlers.EBXLCommandHandler;
-import extrabiomes.handlers.GenesisBiomeOverrideHandler;
 import extrabiomes.handlers.ItemHandler;
 import extrabiomes.handlers.RecipeHandler;
 import extrabiomes.helpers.LogHelper;
@@ -48,6 +41,11 @@ import extrabiomes.plugins.PluginThaumcraft4;
 import extrabiomes.proxy.CommonProxy;
 import extrabiomes.utility.CreativeTab;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraft.command.ICommandManager;
+import net.minecraft.command.ServerCommandManager;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.server.MinecraftServer;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.MOD_VERSION, dependencies = "")
 public class Extrabiomes {

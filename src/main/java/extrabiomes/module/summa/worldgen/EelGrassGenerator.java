@@ -8,13 +8,12 @@ package extrabiomes.module.summa.worldgen;
 
 import java.util.Random;
 
+import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import cpw.mods.fml.common.IWorldGenerator;
-import extrabiomes.lib.BiomeSettings;
 
 public class EelGrassGenerator implements IWorldGenerator
 {
@@ -30,6 +29,7 @@ public class EelGrassGenerator implements IWorldGenerator
     public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
         chunkX = chunkX << 4;
         chunkZ = chunkZ << 4;
+        @SuppressWarnings("unused")
         final BiomeGenBase biome = world.getBiomeGenForCoords(chunkX, chunkX);
         
         for (int i = 0; i < 20; i++) {

@@ -7,10 +7,6 @@
 package extrabiomes.handlers;
 
 import java.io.File;
-import java.util.logging.Level;
-
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.common.config.Property;
 
 import com.google.common.base.Optional;
 
@@ -25,6 +21,8 @@ import extrabiomes.lib.Reference;
 import extrabiomes.lib.SaplingSettings;
 import extrabiomes.module.amica.newdawn.NewDawnSettings;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 
 /**
  * Loads configuration data
@@ -60,7 +58,7 @@ public abstract class ConfigurationHandler
 			configVersion.comment = "To help ebxl in updating the config file in the future.";
 
 			// for future use - are we upgrading between config versions?
-			final boolean isNewVersion = !configVersion.getString().equals(Reference.CONFIG_VERSION);
+			//final boolean isNewVersion = !configVersion.getString().equals(Reference.CONFIG_VERSION);
 			configVersion.set(Reference.CONFIG_VERSION);
 
 			Property upgradeProp = configuration.get("version", "upgrade", upgradeOverride);

@@ -6,13 +6,11 @@
 
 package extrabiomes.module.summa.biome;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.passive.EntityWolf;
-import net.minecraft.init.Blocks;
-import net.minecraft.world.biome.BiomeGenBase.SpawnListEntry;
-import net.minecraftforge.common.BiomeDictionary.Type;
 import extrabiomes.lib.BiomeSettings;
 import extrabiomes.lib.DecorationSettings;
+import net.minecraft.entity.passive.EntityWolf;
+import net.minecraft.init.Blocks;
+import net.minecraftforge.common.BiomeDictionary.Type;
 
 public class BiomeAlpine extends ExtrabiomeGenBase
 {

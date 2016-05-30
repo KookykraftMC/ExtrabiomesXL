@@ -1,11 +1,11 @@
 package extrabiomes.helpers;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@SuppressWarnings({"rawtypes","unchecked"})
 public class ToolTipStringFormatter {
   
   private static String defaultColorVal = "7";
@@ -23,12 +23,14 @@ public class ToolTipStringFormatter {
   private static Pattern codesGood = Pattern.compile("\\\\[0123456789abcdefklmnor]");
   private static Pattern codesBad = Pattern.compile("\\\\[^0123456789abcdefklmnor]");
   
+  /*
   private static Pattern codeObf = Pattern.compile("\\\\k");
   private static Pattern codeBold = Pattern.compile("\\\\l");
   private static Pattern codeStrike = Pattern.compile("\\\\m");
   private static Pattern codeUnder = Pattern.compile("\\\\n");
   private static Pattern codeItilic = Pattern.compile("\\\\o");
   private static Pattern codeReset = Pattern.compile("\\\\r");
+  */
   
   public static List Format(String text) {
     List tmp = new ArrayList<String>();
@@ -41,7 +43,8 @@ public class ToolTipStringFormatter {
     Format(text, lines, 20);
   }
   
-  public static void Format(String text, List lines, int targetLength) {
+
+public static void Format(String text, List lines, int targetLength) {
     String format = "7";
     
     if(text.length() > 0 && text.charAt(0) == 92){
@@ -56,7 +59,8 @@ public class ToolTipStringFormatter {
     Format(text, lines, 20, color);
   }
   
-  public static void Format(String text, List lines, int targetLength, String color) {
+
+public static void Format(String text, List lines, int targetLength, String color) {
     String[] wordArray = text.split(" ");
     int words = wordArray.length;
     

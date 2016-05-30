@@ -8,9 +8,9 @@ package extrabiomes.items;
 
 import java.util.Locale;
 
+import extrabiomes.blocks.BlockGreenLeaves;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-import extrabiomes.blocks.BlockGreenLeaves;
 
 public class ItemCustomGreenLeaves extends ItemCustomLeaves
 {

@@ -8,20 +8,18 @@ package extrabiomes.module.summa.biome;
 
 import java.util.Random;
 
+import com.google.common.base.Optional;
+
+import extrabiomes.api.BiomeManager;
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.BiomeSettings;
+import extrabiomes.lib.DecorationSettings;
 import net.minecraft.world.biome.BiomeDecorator;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn;
-
-import com.google.common.base.Optional;
-
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import extrabiomes.api.BiomeManager;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BiomeSettings;
-import extrabiomes.lib.DecorationSettings;
 
 @SuppressWarnings("deprecation")
 public abstract class ExtrabiomeGenBase extends BiomeGenBase {

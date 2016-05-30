@@ -1,11 +1,9 @@
 package extrabiomes.blocks;
 
 import java.util.List;
-import java.util.Locale;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
 import extrabiomes.helpers.ToolTipStringFormatter;
 import extrabiomes.lib.BlockSettings;
 import extrabiomes.subblocks.SubBlock;
@@ -97,6 +95,7 @@ public class BlockWaterPlant extends Block {
         return false;
     }
     
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs tab, List itemList){
@@ -173,7 +172,8 @@ public class BlockWaterPlant extends Block {
         return null;
     }
 
-	public void addInformation(int metaData, List listOfLines) {
+	@SuppressWarnings("rawtypes")
+    public void addInformation(int metaData, List listOfLines) {
 		if(metaData < subBlocks.length && subBlocks[metaData] != null) {
 			String line = I18n.format(this.getUnlocalizedName() + "." + subBlocks[metaData].getUnlocalizedName() + ".description");
     		

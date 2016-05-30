@@ -1,10 +1,10 @@
 package extrabiomes.plugins;
 
-import net.minecraft.item.ItemStack;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.Stuff;
 import extrabiomes.lib.Element;
 import extrabiomes.module.fabrica.scarecrow.ItemScarecrow;
+import net.minecraft.item.ItemStack;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;

@@ -8,11 +8,9 @@ package extrabiomes.lib;
 
 import java.util.Locale;
 
-import net.minecraft.item.Item;
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.common.config.Property;
-import extrabiomes.helpers.LogHelper;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.config.Property;
 
 public enum BlockSettings
 {
@@ -97,8 +95,8 @@ public enum BlockSettings
     private boolean			enabled;
     private Item			item;
     
-    private static boolean	clearedQuarterLogs = false;
-    private static boolean	clearedWoodSlabs   = false;
+    //private static boolean	clearedQuarterLogs = false;
+    //private static boolean	clearedWoodSlabs   = false;
     
     private BlockSettings()
     {
@@ -128,10 +126,10 @@ public enum BlockSettings
         return toString() + ".enabled";
     }
     
-    private boolean isQuarterLog()
+    /*private boolean isQuarterLog()
     {
         return this == QUARTERLOG0 || this == QUARTERLOG1 || this == QUARTERLOG2 || this == QUARTERLOG3;
-    }
+    }*/
     
     public void load(EnhancedConfiguration configuration, boolean update)
     {
@@ -139,7 +137,7 @@ public enum BlockSettings
     		// case REDROCK:
 	    	case CRACKEDSAND:
 	    	case QUICKSAND:
-	    		final Property property = configuration.get(configuration.CATEGORY_BLOCK, enabledKey(), true);
+	    		final Property property = configuration.get(EnhancedConfiguration.CATEGORY_BLOCK, enabledKey(), true);
 	    		this.enabled = property.getBoolean();
 	    		break;
 			default:

@@ -2,8 +2,8 @@ package extrabiomes.lib;
 
 import java.util.Locale;
 
-import net.minecraftforge.common.config.Property;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraftforge.common.config.Property;
 
 public enum SaplingSettings
 {

@@ -1,9 +1,9 @@
 package extrabiomes.handlers;
 
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import extrabiomes.module.summa.biome.ExtrabiomeGenBase;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.event.entity.living.LivingSpawnEvent.CheckSpawn;
 
 public class CanMobSpawnHandler {
 

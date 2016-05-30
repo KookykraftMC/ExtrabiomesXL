@@ -11,12 +11,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import net.minecraft.block.Block;
-import net.minecraft.world.WorldType;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.gen.feature.WorldGenerator;
-import net.minecraftforge.common.BiomeManager;
-
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
 
@@ -24,6 +18,11 @@ import extrabiomes.Extrabiomes;
 import extrabiomes.api.Api;
 import extrabiomes.api.DiscoverWorldTypesEvent;
 import extrabiomes.lib.BiomeSettings;
+import net.minecraft.block.Block;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.common.BiomeManager;
 
 public abstract class BiomeHelper
 {

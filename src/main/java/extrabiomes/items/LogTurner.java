@@ -7,23 +7,21 @@
 package extrabiomes.items;
 
 import java.util.List;
-import java.util.Set;
 
 import com.google.common.collect.Sets;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import extrabiomes.Extrabiomes;
+import extrabiomes.api.UseLogTurnerEvent;
+import extrabiomes.helpers.ToolTipStringFormatter;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
-import extrabiomes.Extrabiomes;
-import extrabiomes.api.UseLogTurnerEvent;
-import extrabiomes.helpers.ToolTipStringFormatter;
 
 public class LogTurner extends ItemTool
 {
@@ -93,6 +91,7 @@ public class LogTurner extends ItemTool
         return true;
     }
     
+    @SuppressWarnings("rawtypes")
     @Override
     public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
       String line = LanguageRegistry.instance().getStringLocalization(this.getUnlocalizedName() + ".description");

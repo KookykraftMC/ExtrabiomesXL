@@ -4,18 +4,17 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import net.minecraft.world.biome.BiomeGenBase;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import extrabiomes.Extrabiomes;
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.BiomeSettings;
+import net.minecraft.world.biome.BiomeGenBase;
 import two.newdawn.API.NewDawnBiome;
 import two.newdawn.API.NewDawnBiomeProvider;
 import two.newdawn.API.NewDawnBiomeSelector;
 import two.newdawn.API.NewDawnRegistry;
 import two.newdawn.API.noise.NoiseStretch;
 import two.newdawn.API.noise.SimplexNoise;
-import extrabiomes.Extrabiomes;
-import extrabiomes.api.PluginEvent;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BiomeSettings;
 
 public class NewDawnPluginImpl implements NewDawnBiomeProvider
 {

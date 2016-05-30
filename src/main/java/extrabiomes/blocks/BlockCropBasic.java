@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.google.common.collect.Lists;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.helpers.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFlower;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -16,14 +22,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.util.ForgeDirection;
-import net.minecraft.util.Direction;
-
-import com.google.common.collect.Lists;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.helpers.LogHelper;
 
 public class BlockCropBasic extends BlockFlower {
 	
@@ -95,7 +93,7 @@ public class BlockCropBasic extends BlockFlower {
 	{
 		ArrayList<IIcon> IIcons = Lists.newArrayListWithCapacity(MAX_GROWTH_STAGE+1);
 		final String name = cropType.name().toLowerCase();
-		IIcon lastIIcon = null;
+		//IIcon lastIIcon = null;
 		for (int k = 0; k <= MAX_GROWTH_STAGE; ++k) {
 			int l = (k != (MAX_GROWTH_STAGE - 1)) ? k : k-1;
 			
@@ -106,7 +104,8 @@ public class BlockCropBasic extends BlockFlower {
 		cropType.setStageIIcons(IIcons);
 	}
 
-	@Override
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+    @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item p_149666_1_, CreativeTabs p_149666_2_, List p_149666_3_)
     {

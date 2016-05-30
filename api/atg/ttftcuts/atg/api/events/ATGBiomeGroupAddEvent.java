@@ -1,7 +1,7 @@
 package ttftcuts.atg.api.events;
 
-import ttftcuts.atg.api.ATGBiomes.BiomeType;
 import cpw.mods.fml.common.eventhandler.Event;
+import ttftcuts.atg.api.ATGBiomes.BiomeType;
 
 public class ATGBiomeGroupAddEvent extends Event {
 

@@ -1,9 +1,8 @@
 package extrabiomes.module.amica.atg;
 
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-
 import com.google.common.base.Optional;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.PluginEvent;
 import extrabiomes.helpers.LogHelper;

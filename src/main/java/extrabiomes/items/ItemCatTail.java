@@ -6,10 +6,10 @@
 
 package extrabiomes.items;
 
+import extrabiomes.Extrabiomes;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemBlock;
-import extrabiomes.Extrabiomes;
 
 public class ItemCatTail extends ItemBlock
 {

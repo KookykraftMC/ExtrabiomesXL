@@ -6,14 +6,12 @@
 
 package extrabiomes.module.summa.biome;
 
+import extrabiomes.lib.BiomeSettings;
+import extrabiomes.lib.DecorationSettings;
 import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.entity.passive.EntityOcelot;
 import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.biome.BiomeGenBase.Height;
-import net.minecraft.world.biome.BiomeGenBase.SpawnListEntry;
 import net.minecraftforge.common.BiomeDictionary.Type;
-import extrabiomes.lib.BiomeSettings;
-import extrabiomes.lib.DecorationSettings;
 
 public class BiomeMiniJungle extends ExtrabiomeGenBase
 {

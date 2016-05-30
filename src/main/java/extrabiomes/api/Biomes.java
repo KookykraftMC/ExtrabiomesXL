@@ -6,11 +6,10 @@
 
 package extrabiomes.api;
 
-import net.minecraft.world.biome.BiomeGenBase;
-
 import com.google.common.base.Optional;
 
 import extrabiomes.api.events.GetBiomeIDEvent;
+import net.minecraft.world.biome.BiomeGenBase;
 
 /**
  * Provides access to custom biomes. Reference implementation.

@@ -5,26 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-//import net.minecraft.network.packet.Packet51MapChunk;
-//import net.minecraft.server.management.PlayerInstance;
-//import net.minecraft.util.ChatMessageComponent;
-import net.minecraft.util.ChunkCoordinates;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.IIcon;
-import net.minecraft.util.Vec3;
-import net.minecraft.world.World;
-import net.minecraft.world.WorldServer;
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraft.world.chunk.Chunk;
-import net.minecraft.world.chunk.storage.IChunkLoader;
-import net.minecraft.world.gen.ChunkProviderServer;
-import net.minecraftforge.common.DimensionManager;
-
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.google.common.base.Optional;
@@ -36,6 +16,24 @@ import extrabiomes.handlers.GenesisBiomeOverrideHandler;
 import extrabiomes.helpers.LogHelper;
 import extrabiomes.lib.BiomeSettings;
 import extrabiomes.lib.GenesisChunkProvider;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+//import net.minecraft.network.packet.Packet51MapChunk;
+//import net.minecraft.server.management.PlayerInstance;
+//import net.minecraft.util.ChatMessageComponent;
+import net.minecraft.util.ChunkCoordinates;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.Vec3;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.chunk.storage.IChunkLoader;
+import net.minecraft.world.gen.ChunkProviderServer;
+import net.minecraftforge.common.DimensionManager;
 
 public class BlockMachine extends Block {
 
@@ -108,7 +106,7 @@ public class BlockMachine extends Block {
 		return true;
 	}
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "unused" })
 	public void doGenesis(World world, int x, int y, int z, int range, EntityPlayer sender) {
 		// pick a new biome
 		LogHelper.info("Starting genesis at " + x + "," + z);
@@ -131,7 +129,7 @@ public class BlockMachine extends Block {
 
 		GenesisBiomeOverrideHandler.enable(newBiome.biomeID);
 
-		Integer dimension = null;
+        Integer dimension = null;
 		Integer chunkX = sender.getPlayerCoordinates().posX >> 4;
 		Integer chunkZ = sender.getPlayerCoordinates().posZ >> 4;
 		dimension = Integer.valueOf(sender.dimension);

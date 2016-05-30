@@ -2,10 +2,11 @@
  */
 package two.newdawn.API;
 
-import cpw.mods.fml.common.FMLLog;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import cpw.mods.fml.common.FMLLog;
 import two.newdawn.API.noise.SimplexNoise;
 
 /**

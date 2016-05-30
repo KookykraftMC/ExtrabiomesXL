@@ -2,8 +2,8 @@ package extrabiomes.module.amica.newdawn;
 
 import java.util.Locale;
 
-import net.minecraftforge.common.config.Property;
 import extrabiomes.utility.EnhancedConfiguration;
+import net.minecraftforge.common.config.Property;
 
 public enum NewDawnSettings {
 	MINI_JUNGLE(StretchSize.EXTRA_SMALL),

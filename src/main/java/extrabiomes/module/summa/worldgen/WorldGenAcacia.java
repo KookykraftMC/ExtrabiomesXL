@@ -8,15 +8,14 @@ package extrabiomes.module.summa.worldgen;
 
 import java.util.Random;
 
+import extrabiomes.lib.Element;
+import extrabiomes.module.summa.TreeSoilRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-import net.minecraft.world.gen.feature.WorldGenerator;
-import extrabiomes.lib.Element;
-import extrabiomes.module.summa.TreeSoilRegistry;
 
 public class WorldGenAcacia extends WorldGenAbstractTree
 {

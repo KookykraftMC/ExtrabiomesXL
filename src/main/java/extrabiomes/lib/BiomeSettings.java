@@ -8,14 +8,9 @@ package extrabiomes.lib;
 
 import java.util.Locale;
 
-import net.minecraft.world.biome.BiomeGenBase;
-import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.common.BiomeManager;
-import net.minecraftforge.common.BiomeManager.BiomeType;
-import net.minecraftforge.common.config.Property;
-
 import com.google.common.base.Optional;
 
+import extrabiomes.helpers.LogHelper;
 import extrabiomes.module.summa.biome.BiomeAlpine;
 import extrabiomes.module.summa.biome.BiomeAutumnWoods;
 import extrabiomes.module.summa.biome.BiomeBirchForest;
@@ -46,7 +41,11 @@ import extrabiomes.module.summa.biome.BiomeWasteland;
 import extrabiomes.module.summa.biome.BiomeWoodlands;
 import extrabiomes.module.summa.biome.ExtrabiomeGenBase;
 import extrabiomes.utility.EnhancedConfiguration;
-import extrabiomes.helpers.LogHelper;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeType;
+import net.minecraftforge.common.config.Property;
 
 public enum BiomeSettings {
 	DESERT, EXTREMEHILLS, FOREST, JUNGLE, PLAINS, SWAMPLAND, TAIGA, OCEAN,

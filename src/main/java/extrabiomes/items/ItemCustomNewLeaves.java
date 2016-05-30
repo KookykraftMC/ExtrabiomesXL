@@ -2,9 +2,9 @@ package extrabiomes.items;
 
 import java.util.Locale;
 
+import extrabiomes.blocks.BlockNewLeaves;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-import extrabiomes.blocks.BlockNewLeaves;
 
 public class ItemCustomNewLeaves extends ItemCustomLeaves
 {

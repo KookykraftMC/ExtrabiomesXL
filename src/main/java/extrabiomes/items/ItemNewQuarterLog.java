@@ -7,17 +7,13 @@
 package extrabiomes.items;
 
 import java.util.List;
-import java.util.Locale;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import extrabiomes.helpers.ToolTipStringFormatter;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import extrabiomes.blocks.BlockCustomSapling;
-import extrabiomes.blocks.BlockMiniLog;
-import extrabiomes.helpers.ToolTipStringFormatter;
-import extrabiomes.utility.MultiItemBlock;
 
 public class ItemNewQuarterLog extends ItemBlock
 {    
@@ -28,6 +24,7 @@ public class ItemNewQuarterLog extends ItemBlock
         this.setMaxDamage(0);
     }
 
+    @SuppressWarnings("rawtypes")
     @Override
     public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
       String line = LanguageRegistry.instance().getStringLocalization("extrabiomes.cornerlog.crafting");

@@ -5,13 +5,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Random;
 
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.Element;
+import extrabiomes.module.summa.TreeSoilRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.Element;
-import extrabiomes.module.summa.TreeSoilRegistry;
 
 public class WorldGenJapaneseMapleTree extends WorldGenNewTreeBase
 {

@@ -6,7 +6,6 @@
 
 package extrabiomes.module.fabrica.scarecrow;
 
-import net.minecraft.block.Block;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.ai.EntityAIAvoidEntity;

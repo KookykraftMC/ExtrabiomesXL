@@ -3,12 +3,12 @@ package extrabiomes.handlers;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import extrabiomes.helpers.LogHelper;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.IntCache;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens;
-import extrabiomes.helpers.LogHelper;
 
 public class GenesisBiomeOverrideHandler extends GenLayer{
 	public static GenesisBiomeOverrideHandler	INSTANCE	= new GenesisBiomeOverrideHandler();

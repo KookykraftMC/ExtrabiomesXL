@@ -8,6 +8,13 @@ package extrabiomes.module.fabrica.scarecrow;
 
 import java.util.List;
 
+import com.google.common.base.Optional;
+
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.helpers.ToolTipStringFormatter;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
@@ -18,14 +25,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Facing;
 import net.minecraft.world.World;
-
-import com.google.common.base.Optional;
-
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.helpers.ToolTipStringFormatter;
 
 public class ItemScarecrow extends Item
 {
@@ -95,6 +94,7 @@ public class ItemScarecrow extends Item
         return true;
     }
     
+    @SuppressWarnings("rawtypes")
     @Override
     public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
       String line = LanguageRegistry.instance().getStringLocalization(this.getUnlocalizedName() + ".description");

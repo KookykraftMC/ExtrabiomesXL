@@ -6,18 +6,15 @@
 
 package extrabiomes.module.cautia.block;
 
-import net.minecraft.block.Block;
-
 import com.google.common.base.Optional;
 
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.Stuff;
 import extrabiomes.helpers.LogHelper;
 import extrabiomes.lib.BlockSettings;
-import extrabiomes.lib.Reference;
-import extrabiomes.module.amica.buildcraft.FacadeHelper;
 import extrabiomes.module.cautia.worldgen.QuicksandGenerator;
 import extrabiomes.proxy.CommonProxy;
+import net.minecraft.block.Block;
 
 public enum BlockManager
 {

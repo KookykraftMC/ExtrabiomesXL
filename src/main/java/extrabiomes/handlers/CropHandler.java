@@ -1,11 +1,5 @@
 package extrabiomes.handlers;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockFlower;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
-
 import org.apache.commons.lang3.StringUtils;
 
 import com.google.common.base.Optional;
@@ -24,6 +18,10 @@ import extrabiomes.lib.ItemSettings;
 import extrabiomes.lib.Reference;
 import extrabiomes.module.summa.worldgen.FlowerGenerator;
 import extrabiomes.proxy.CommonProxy;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class CropHandler {
     public static void createCrops() {
@@ -113,7 +111,7 @@ public class CropHandler {
 	}
 
     private static void createBasicCrops() {
-    	for( BlockCropBasic.CropType type : BlockCropBasic.CropType.values() ) {
+    	for( @SuppressWarnings("unused") BlockCropBasic.CropType type : BlockCropBasic.CropType.values() ) {
     	}
     }
     

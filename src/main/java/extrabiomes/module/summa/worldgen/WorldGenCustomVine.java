@@ -3,7 +3,6 @@ package extrabiomes.module.summa.worldgen;
 import java.util.Random;
 
 import extrabiomes.blocks.BlockCustomVine;
-import extrabiomes.helpers.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.Direction;

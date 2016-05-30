@@ -8,17 +8,14 @@ package extrabiomes.items;
 
 import java.util.List;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.blocks.BlockWaterPlant;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import net.minecraft.world.World;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.blocks.BlockCustomFlower;
-import extrabiomes.blocks.BlockWaterPlant;
-import extrabiomes.helpers.LogHelper;
 
 public class ItemBlockWaterPlant extends ItemBlock
 {
@@ -59,7 +56,7 @@ public class ItemBlockWaterPlant extends ItemBlock
     }
 
     @Override
-    public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, List listOfLines, boolean sneaking) {
+    public void addInformation(ItemStack itemForTooltip, EntityPlayer playerViewingToolTip, @SuppressWarnings("rawtypes") List listOfLines, boolean sneaking) {
     	((BlockWaterPlant)Block.getBlockFromItem(itemForTooltip.getItem())).addInformation(itemForTooltip.getItemDamage(), listOfLines);
     }
 }

@@ -6,9 +6,9 @@
 
 package extrabiomes.api;
 
-import cpw.mods.fml.common.eventhandler.EventBus;
-
 import com.google.common.base.Optional;
+
+import cpw.mods.fml.common.eventhandler.EventBus;
 
 /*
  * @author ScottKillen

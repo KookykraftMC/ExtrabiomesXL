@@ -2,6 +2,13 @@ package extrabiomes.items;
 
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.Element;
 import net.minecraft.block.BlockColored;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,14 +20,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraftforge.oredict.OreDictionary;
-
-import org.apache.commons.lang3.StringUtils;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.Element;
 
 public class ItemCustomDye extends Item {
 

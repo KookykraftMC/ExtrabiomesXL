@@ -2,6 +2,9 @@ package extrabiomes.items;
 
 import java.util.List;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
 import extrabiomes.helpers.LogHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFlower;
@@ -15,11 +18,8 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
-import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.common.IPlantable;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class ItemCustomSeed extends Item implements IPlantable {
 
@@ -77,7 +77,8 @@ public class ItemCustomSeed extends Item implements IPlantable {
 		return super.getUnlocalizedName() + "." + seed.name().toLowerCase();
 	}
 
-	@Override
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+    @Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(Item item, CreativeTabs tabs, List list) {
 		for (SeedType type : SeedType.values()) {

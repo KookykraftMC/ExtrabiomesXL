@@ -1,8 +1,8 @@
 package extrabiomes.module.amica.atg;
 
+import extrabiomes.lib.BiomeSettings;
 import ttftcuts.atg.api.ATGBiomes;
 import ttftcuts.atg.api.ATGBiomes.BiomeType;
-import extrabiomes.lib.BiomeSettings;
 
 public class ATGPluginImpl
 {
@@ -220,7 +220,7 @@ public class ATGPluginImpl
     
     private void addBeachBiomes()
     {
-        String group = "Beach";
+        //String group = "Beach";
         /*if (BiomeSettings.FORESTEDISLAND.isEnabled() && BiomeSettings.FORESTEDISLAND.getBiome().isPresent())
         {
             ATGBiomes.addBiome(COAST, group, BiomeSettings.FORESTEDISLAND.getBiome().get(), 1.0);

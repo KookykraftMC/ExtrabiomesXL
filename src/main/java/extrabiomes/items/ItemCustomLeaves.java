@@ -8,10 +8,10 @@ package extrabiomes.items;
 
 import java.util.Locale;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
 import extrabiomes.blocks.BlockAutumnLeaves;
 import extrabiomes.utility.MultiItemBlock;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
 
 public class ItemCustomLeaves extends MultiItemBlock
 {

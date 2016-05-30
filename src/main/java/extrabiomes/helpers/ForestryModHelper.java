@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import net.minecraft.item.ItemStack;
-
 import com.google.common.collect.ImmutableList;
+
+import net.minecraft.item.ItemStack;
 
 public abstract class ForestryModHelper
 {

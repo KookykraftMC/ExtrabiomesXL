@@ -8,6 +8,8 @@ package extrabiomes.module.summa.worldgen;
 
 import java.util.Random;
 
+import cpw.mods.fml.common.IWorldGenerator;
+import extrabiomes.lib.BiomeSettings;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -15,8 +17,6 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import cpw.mods.fml.common.IWorldGenerator;
-import extrabiomes.lib.BiomeSettings;
 
 public class MountainRidgeGenerator implements IWorldGenerator
 {

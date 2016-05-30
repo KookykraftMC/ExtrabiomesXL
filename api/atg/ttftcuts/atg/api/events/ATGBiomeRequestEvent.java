@@ -2,8 +2,8 @@ package ttftcuts.atg.api.events;
 
 import com.google.common.base.Optional;
 
-import net.minecraft.world.biome.BiomeGenBase;
 import cpw.mods.fml.common.eventhandler.Event;
+import net.minecraft.world.biome.BiomeGenBase;
 
 public class ATGBiomeRequestEvent extends Event {
 

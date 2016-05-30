@@ -1,16 +1,14 @@
 package extrabiomes.items;
 
-import java.util.List;
 import java.util.Locale;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.IIcon;
 import extrabiomes.blocks.BlockCustomFence;
 import extrabiomes.utility.MultiItemBlock;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
 
 public class ItemCustomFence extends MultiItemBlock {
   public ItemCustomFence(Block block) {

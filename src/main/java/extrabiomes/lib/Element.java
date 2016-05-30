@@ -6,11 +6,10 @@
 
 package extrabiomes.lib;
 
-import net.minecraft.item.ItemStack;
-
 import com.google.common.base.Optional;
 
 import cpw.mods.fml.common.registry.GameData;
+import net.minecraft.item.ItemStack;
 
 public enum Element
 {

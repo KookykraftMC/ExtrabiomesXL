@@ -8,13 +8,6 @@ package extrabiomes.handlers;
 
 import java.util.Collection;
 
-import net.minecraft.init.Blocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import extrabiomes.Extrabiomes;
 import extrabiomes.blocks.BlockAutumnLeaves;
 import extrabiomes.blocks.BlockCatTail;
@@ -54,13 +47,19 @@ import extrabiomes.module.summa.worldgen.EelGrassGenerator;
 import extrabiomes.module.summa.worldgen.FlowerGenerator;
 import extrabiomes.module.summa.worldgen.LeafPileGenerator;
 import extrabiomes.module.summa.worldgen.VineGenerator;
-import extrabiomes.module.summa.worldgen.WorldGenCustomVine;
 import extrabiomes.proxy.CommonProxy;
 import extrabiomes.renderers.RenderKneeLog;
 import extrabiomes.renderers.RenderMiniLog;
 import extrabiomes.renderers.RenderNewQuarterLog;
 import extrabiomes.renderers.RenderQuarterLog;
 import extrabiomes.subblocks.SubBlockWaterPlant;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.gen.feature.WorldGenTallGrass;
 
 public abstract class BlockHandler {
 
@@ -596,7 +595,7 @@ public abstract class BlockHandler {
     BiomeHelper.addTerrainBlockstoBiome(BiomeSettings.MOUNTAINRIDGE, block, block);
 
     ForestryModHelper.addToDiggerBackpack(new ItemStack(block, 1, Short.MAX_VALUE));
-    for (final BlockRedRock.BlockType type : BlockRedRock.BlockType.values()) {
+    for (@SuppressWarnings("unused") final BlockRedRock.BlockType type : BlockRedRock.BlockType.values()) {
       //FacadeHelper.addBuildcraftFacade(block, type.metadata());
     }
   }
@@ -707,7 +706,7 @@ public abstract class BlockHandler {
     Element.LOG_JAPANESE_MAPLE.set(new ItemStack(block, 1, BlockCustomLog.BlockType.JAPANESE_MAPLE.metadata()));
 
     ForestryModHelper.addToForesterBackpack(new ItemStack(block, 1, Short.MAX_VALUE));
-    for (final BlockCustomLog.BlockType type : BlockCustomLog.BlockType.values()) {
+    for (@SuppressWarnings("unused") final BlockCustomLog.BlockType type : BlockCustomLog.BlockType.values()) {
       //FacadeHelper.addBuildcraftFacade(block, type.metadata());
     }
 
@@ -729,7 +728,7 @@ public abstract class BlockHandler {
     Element.LOG_REDWOOD.set(new ItemStack(block2, 1, BlockNewLog.BlockType.REDWOOD.metadata()));
 
     ForestryModHelper.addToForesterBackpack(new ItemStack(block2, 1, Short.MAX_VALUE));
-    for (final BlockNewLog.BlockType type : BlockNewLog.BlockType.values()) {
+    for (@SuppressWarnings("unused") final BlockNewLog.BlockType type : BlockNewLog.BlockType.values()) {
       //FacadeHelper.addBuildcraftFacade(block2, type.metadata());
     }
   }

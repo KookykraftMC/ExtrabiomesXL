@@ -7,8 +7,13 @@
 package extrabiomes.blocks;
 
 import java.util.List;
-import java.util.Random;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.api.UseLogTurnerEvent;
+import extrabiomes.lib.BlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.material.Material;
@@ -19,13 +24,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.api.UseLogTurnerEvent;
-import extrabiomes.lib.BlockSettings;
 
 public class BlockMiniLog extends BlockLog
 {
@@ -46,6 +44,7 @@ public class BlockMiniLog extends BlockLog
         }
     }
     
+    @SuppressWarnings("unused")
     private BlockSettings settings;
     private IIcon[]     textures = { null, null, null, null, null, null, null, null };
     private static int renderId = 33;

@@ -1,8 +1,8 @@
 package extrabiomes.lib;
 
-import net.minecraft.block.Block;
-
 import com.google.common.base.Optional;
+
+import net.minecraft.block.Block;
 
 public enum Blocks
 {

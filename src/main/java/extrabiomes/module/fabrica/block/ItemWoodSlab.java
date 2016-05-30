@@ -6,12 +6,12 @@
 
 package extrabiomes.module.fabrica.block;
 
+import com.google.common.base.Optional;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
-
-import com.google.common.base.Optional;
 
 public class ItemWoodSlab extends ItemSlab
 {

@@ -6,11 +6,10 @@
 
 package extrabiomes;
 
-import cpw.mods.fml.common.eventhandler.Event;
-import cpw.mods.fml.common.eventhandler.EventBus;
-
 import com.google.common.base.Optional;
 
+import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.eventhandler.EventBus;
 import extrabiomes.helpers.LogHelper;
 import extrabiomes.lib.ModuleControlSettings;
 import extrabiomes.module.amica.Amica;

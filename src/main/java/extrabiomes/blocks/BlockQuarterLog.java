@@ -10,6 +10,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.api.UseLogTurnerEvent;
+//import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.BlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.BlockPistonBase;
@@ -24,13 +31,6 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.api.UseLogTurnerEvent;
-//import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BlockSettings;
 
 public class BlockQuarterLog extends BlockLog
 {
@@ -94,6 +94,7 @@ public class BlockQuarterLog extends BlockLog
         return barkOnSides;
     }
     
+    @SuppressWarnings("unused")
     private BlockSettings settings;
     private HashMap<Integer, IIcon> textures;
     private IIcon[]                 textureArray = { null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null };
@@ -454,7 +455,7 @@ public class BlockQuarterLog extends BlockLog
         return offset;
     }
     
-    @SuppressWarnings({ "rawtypes", "unchecked" })
+    @SuppressWarnings("rawtypes")
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs par2CreativeTabs, List list)

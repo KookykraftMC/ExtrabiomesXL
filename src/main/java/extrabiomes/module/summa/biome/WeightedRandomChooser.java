@@ -9,9 +9,9 @@ package extrabiomes.module.summa.biome;
 import java.util.Collection;
 import java.util.Random;
 
-import net.minecraft.util.WeightedRandom.Item;
-
 import com.google.common.base.Optional;
+
+import net.minecraft.util.WeightedRandom.Item;
 
 public enum WeightedRandomChooser
 {

@@ -11,26 +11,24 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+
+import cpw.mods.fml.common.IWorldGenerator;
 import extrabiomes.Extrabiomes;
+import extrabiomes.blocks.BlockCropBasic;
+import extrabiomes.blocks.BlockCustomFlower;
+import extrabiomes.blocks.BlockCustomFlower.BlockType;
+import extrabiomes.lib.BiomeSettings;
+import extrabiomes.lib.DecorationSettings.Decoration;
+import extrabiomes.lib.Element;
+import extrabiomes.module.summa.biome.ExtrabiomeGenBase;
 import extrabiomes.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-
-import cpw.mods.fml.common.IWorldGenerator;
-import extrabiomes.blocks.BlockCropBasic;
-import extrabiomes.blocks.BlockCustomFlower;
-import extrabiomes.blocks.BlockCustomFlower.BlockType;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BiomeSettings;
-import extrabiomes.lib.DecorationSettings.Decoration;
-import extrabiomes.lib.Element;
-import extrabiomes.module.summa.biome.ExtrabiomeGenBase;
 
 public class FlowerGenerator implements IWorldGenerator
 {

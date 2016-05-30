@@ -12,10 +12,19 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 
+import com.google.common.collect.Maps;
+
+import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.helpers.ToolTipStringFormatter;
+import extrabiomes.lib.BiomeSettings;
+import extrabiomes.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -26,17 +35,6 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
-
-import com.google.common.collect.Maps;
-
-import cpw.mods.fml.common.registry.LanguageRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.BiomeSettings;
-import extrabiomes.proxy.CommonProxy;
-import extrabiomes.helpers.ToolTipStringFormatter;
 
 // TODO: make this extend BlockFlower
 public class BlockCustomFlower extends Block implements IPlantable
@@ -315,7 +313,7 @@ public class BlockCustomFlower extends Block implements IPlantable
     }
     
 
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	@SuppressWarnings("rawtypes")
 	public void addInformation(int metaData, List listOfLines) {
 		if(groupMap.containsKey(metaData)) {
     		String line = LanguageRegistry.instance().getStringLocalization(this.getUnlocalizedName() + "." + groupMap.get(metaData).name().toLowerCase(Locale.ENGLISH) + ".description");

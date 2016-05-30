@@ -8,25 +8,14 @@ package extrabiomes.module.fabrica.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.IRecipe;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.oredict.ShapedOreRecipe;
-import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import com.google.common.base.Optional;
 
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import extrabiomes.Extrabiomes;
 import extrabiomes.api.Stuff;
 import extrabiomes.blocks.BlockCustomFence;
 import extrabiomes.blocks.BlockRedRock;
-import extrabiomes.blocks.BlockCustomFence.BlockType;
 import extrabiomes.events.BlockActiveEvent.AcaciaStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.AutumnStairsActiveEvent;
 import extrabiomes.events.BlockActiveEvent.BaldCypressStairsActiveEvent;
@@ -53,6 +42,14 @@ import extrabiomes.module.fabrica.block.BlockCustomWoodSlab;
 import extrabiomes.module.fabrica.block.BlockNewWoodSlab;
 import extrabiomes.module.fabrica.block.BlockRedRockSlab;
 import extrabiomes.proxy.CommonProxy;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class RecipeManager
 {

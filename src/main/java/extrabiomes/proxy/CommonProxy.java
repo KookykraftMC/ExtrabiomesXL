@@ -13,6 +13,18 @@ import java.util.Collection;
 
 import org.apache.logging.log4j.Logger;
 
+import com.google.common.base.Optional;
+
+import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
+import cpw.mods.fml.common.FMLLog;
+import cpw.mods.fml.common.IFuelHandler;
+import cpw.mods.fml.common.IWorldGenerator;
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.common.eventhandler.Event;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import extrabiomes.helpers.LogHelper;
+import extrabiomes.lib.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -27,20 +39,6 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.oredict.OreDictionary;
-
-import com.google.common.base.Optional;
-
-import cpw.mods.fml.client.registry.ISimpleBlockRenderingHandler;
-import cpw.mods.fml.common.FMLLog;
-import cpw.mods.fml.common.IFuelHandler;
-import cpw.mods.fml.common.IWorldGenerator;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.eventhandler.Event;
-import extrabiomes.api.Stuff;
-import extrabiomes.helpers.LogHelper;
-import extrabiomes.lib.Reference;
 
 public class CommonProxy
 {

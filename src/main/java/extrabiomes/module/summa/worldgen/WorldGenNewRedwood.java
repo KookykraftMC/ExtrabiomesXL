@@ -2,14 +2,13 @@ package extrabiomes.module.summa.worldgen;
 
 import java.util.Random;
 
+import extrabiomes.lib.Element;
+import extrabiomes.module.summa.TreeSoilRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
-import net.minecraft.world.gen.feature.WorldGenerator;
-import extrabiomes.lib.Element;
-import extrabiomes.module.summa.TreeSoilRegistry;
 
 public class WorldGenNewRedwood extends WorldGenAbstractTree
 {
@@ -91,8 +90,8 @@ public class WorldGenNewRedwood extends WorldGenAbstractTree
     private boolean generateTree(World world, Random rand, int x, int y, int z)
     {
         final int height = rand.nextInt(23) + 26;
-        byte b0 = 1;
-        int flag1 = 1;
+        //byte b0 = 1;
+        //int flag1 = 1;
         int chunkCheck =  13;
 
         if (y < 1 || y + height + 5 > 256)

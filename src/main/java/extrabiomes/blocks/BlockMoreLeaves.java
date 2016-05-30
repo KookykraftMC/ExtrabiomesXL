@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.google.common.base.Optional;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import extrabiomes.Extrabiomes;
+import extrabiomes.lib.Element;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeavesBase;
 import net.minecraft.block.material.Material;
@@ -25,13 +31,6 @@ import net.minecraft.world.ColorizerFoliage;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IShearable;
-
-import com.google.common.base.Optional;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.Extrabiomes;
-import extrabiomes.lib.Element;
 
 public class BlockMoreLeaves extends BlockLeavesBase implements IShearable
 {
@@ -104,7 +103,7 @@ public class BlockMoreLeaves extends BlockLeavesBase implements IShearable
     private static final int METADATA_DECAYBIT      = 0x8;
     private static final int METADATA_CLEARDECAYBIT = -METADATA_DECAYBIT - 1;
     
-    private static int calcSmoothedBiomeFoliageColor(IBlockAccess iBlockAccess, int x, int z)
+    /*private static int calcSmoothedBiomeFoliageColor(IBlockAccess iBlockAccess, int x, int z)
     {
         int red = 0;
         int green = 0;
@@ -122,7 +121,7 @@ public class BlockMoreLeaves extends BlockLeavesBase implements IShearable
         }
         
         return (red / 9 & 255) << 16 | (green / 9 & 255) << 8 | blue / 9 & 255;
-    }
+    }*/
     
     static private int clearDecayOnMetadata(int metadata)
     {

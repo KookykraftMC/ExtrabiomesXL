@@ -1,8 +1,8 @@
 package extrabiomes.items;
 
+import extrabiomes.utility.MultiItemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-import extrabiomes.utility.MultiItemBlock;
 
 public class ItemRedRock extends MultiItemBlock
 {

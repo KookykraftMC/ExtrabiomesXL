@@ -1,11 +1,9 @@
 package extrabiomes.api;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-
 import com.google.common.base.Optional;
 
-import extrabiomes.items.ItemCustomDye;
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 
 /**
  * This class contains all of the custom items and blocks.
